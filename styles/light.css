@@ -16,9 +16,7 @@
   --subtitle-text-color: #353430;
   --main-text-color: #353430;
   --accent-text-color: #353430;
-  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --main-font-size: 18px;
-  background-image: url(../images/cover-image-light.png);
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,12 +29,7 @@
     --subtitle-text-color: #353430;
     --main-text-color: #353430;
     --accent-text-color: #353430;
-    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --main-font-size: 18px;
-  }
-
-  .page.theme_auto {
-    background-image: url(../images/cover-image-light.png);
+    --bg-image: url(../images/cover-image-light.png);
   }
 
   .theme_auto .header__decoration-block {
@@ -44,7 +37,7 @@
   }
 }
 
-.page.theme_light .header__decoration-block {
+.theme_light .header__decoration-block {
   display: none;
 }
 

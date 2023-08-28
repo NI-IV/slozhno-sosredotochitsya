@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: 'IBM Plex Mono', sans-serif;
   background-color: var(--bg-color);
-  background-image: url(../images/cover-image.png);
+  background-image: var(--bg-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,28 +45,6 @@
   inset-block-start: var(--padding);
 }
 
-.header__decoration-block {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  inset-inline-end: var(--padding);
-  inset-block-start: var(--padding);
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
-
-.header__decoration-block::after {
-  content: '';
-  inline-size: 9px;
-  block-size: 9px;
-  background-color: var(--accent-color);
-  filter: drop-shadow(0 0 4px var(--accent-color));
-  border-radius: 50%;
-  margin-inline-end: 9px;
-}
-
 .header__theme-menu {
   justify-self: end;
   padding-inline-end: 3px;
@@ -94,6 +72,28 @@
   outline: 1px solid var(--subtitle-text-color);
   outline-offset: 3px;
   pointer-events: none;
+}
+
+.header__decoration-block {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset-inline-end: var(--padding);
+  inset-block-start: var(--padding);
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header__decoration-block::after {
+  content: '';
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0 0 4px var(--accent-color));
+  border-radius: 50%;
+  margin-inline-end: 9px;
 }
 
 .title {
