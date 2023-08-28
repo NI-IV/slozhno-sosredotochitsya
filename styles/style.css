@@ -241,6 +241,7 @@
 
 .footer {
   block-size: 100vh;
+  min-block-size: 668px;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -316,6 +317,10 @@
     block-size: 100%;
     object-fit: cover;
   }
+
+  .footer {
+    min-block-size: 1024px;
+  }
 }
 
 @media (width > 768px) {
@@ -347,5 +352,9 @@
   .section-center-position .section__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer {
+    min-block-size: 768px;
   }
 }
