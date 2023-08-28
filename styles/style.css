@@ -68,6 +68,16 @@
   line-height: 100%;
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover);
+  outline-offset: 3px;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-block-end: 1px solid var(--subtitle-text-color);
+}
+
 .header__theme-menu-button_active {
   outline: 1px solid var(--subtitle-text-color);
   outline-offset: 3px;
@@ -162,8 +172,20 @@
 }
 
 .link {
+  display: inline-block;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--text-shadow);
+}
+
+.link:hover {
+  border-block-end: 1px solid var(--main-text-color);
+}
+
+.link:focus {
+  line-height: .5;
+  padding-block-end: 3px;
+  outline: 1px solid var(--main-text-color);
+  outline-offset: 1px;
 }
 
 .section__content-container {
