@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: 'IBM Plex Mono', sans-serif;
   background-color: var(--bg-color);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url(../images/cover-image.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,10 +269,10 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, max-content));
     grid-template-rows: repeat(3, minmax(min-content, max-content));
-    grid-template-areas: 
-    "sunset sunset ice-cream"
-    "tape books ice-cream"
-    "tape street street";
+    grid-template-areas:
+      'sunset sunset ice-cream'
+      'tape books ice-cream'
+      'tape street street';
   }
 
   .cards-section__image {
@@ -280,7 +280,6 @@
     block-size: 100%;
     object-fit: cover;
   }
-
 }
 
 @media (width > 768px) {
@@ -309,5 +308,4 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  
 }
