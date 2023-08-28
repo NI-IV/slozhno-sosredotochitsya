@@ -8,17 +8,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  --padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  padding: var(--padding);
 }
 
 .header {
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-  block-size: calc(100vh - (2 * var(--padding)));
+  block-size: 100vh;
   align-items: center;
   position: relative;
   font-size: var(--main-font-size);
+  padding: var(--padding);
 }
 
 .header::before {
@@ -26,11 +25,11 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--subtitle-text-color);
+  border-block-end: 1px solid var(--subtitle-text-color);
   position: absolute;
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: var(--padding);
+  inset-block-end: var(--padding);
 }
 
 .header::after {
@@ -38,11 +37,11 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--subtitle-text-color);
+  border-block-start: 1px solid var(--subtitle-text-color);
   position: absolute;
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--padding);
+  inset-block-start: var(--padding);
 }
 
 .header__decoration-block {
@@ -51,8 +50,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--padding);
+  inset-block-start: var(--padding);
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -84,14 +83,14 @@
   text-transform: lowercase;
   border: none;
   font-family: inherit;
-  color: var(--accent-color);
+  color: var(--subtitle-text-color);
   background-color: transparent;
   cursor: pointer;
   line-height: 100%;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--subtitle-text-color);
   outline-offset: 3px;
   pointer-events: none;
 }
@@ -106,16 +105,14 @@
 }
 
 .header__title {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--text-shadow);
 }
 
 .main {
   display: grid;
   gap: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
-  margin-block-start: calc(
-    var(--padding) + clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem)
-  );
-  margin-block-end: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
+  padding: 0 var(--padding);
+  margin: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem) 0;
 }
 
 .section {
@@ -125,7 +122,7 @@
 
 .section__title {
   font-size: var(--main-font-size);
-  color: var(--accent-color);
+  color: var(--subtitle-text-color);
   display: block;
 }
 
@@ -156,7 +153,7 @@
 }
 
 .section__text {
-  color: #f1b2ce;
+  color: var(--main-text-color);
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
@@ -165,7 +162,7 @@
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--text-shadow);
 }
 
 .section__content-container {
@@ -210,7 +207,7 @@
 }
 
 .footer {
-  block-size: calc(100vh - (2 * var(--padding)));
+  block-size: 100vh;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -218,7 +215,7 @@
 }
 
 .footer__title {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--text-shadow);
 }
 
 .footer::before {
@@ -226,11 +223,11 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--subtitle-text-color);
+  border-block-end: 1px solid var(--subtitle-text-color);
   position: absolute;
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: var(--padding);
+  inset-block-end: var(--padding);
 }
 
 .footer::after {
@@ -238,14 +235,14 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--subtitle-text-color);
+  border-block-start: 1px solid var(--subtitle-text-color);
   position: absolute;
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--padding);
+  inset-block-start: var(--padding);
 }
 
-@media (width > 375px) {
+@media (width > 600px) {
 
   .header__title {
     position: relative;

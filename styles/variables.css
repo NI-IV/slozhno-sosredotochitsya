@@ -6,9 +6,12 @@
 :root {
   --title-color: #db00ff;
   --accent-color: #ff0070;
+  --text-shadow: #ff0070;
   --bg-color: #000028;
+  --subtitle-text-color: #ff0070;
   --main-text-color: #f1b2ce;
   --accent-text-color: #000028;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-font-size: 18px;
+  --padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
