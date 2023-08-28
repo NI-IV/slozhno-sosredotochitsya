@@ -15,6 +15,7 @@
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   block-size: 100vh;
+  min-block-size: 668px;
   align-items: center;
   position: relative;
   font-size: var(--main-font-size);
@@ -75,6 +76,9 @@
 
 .header__theme-menu-button:focus {
   outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--subtitle-text-color);
 }
 
@@ -128,7 +132,7 @@
 
 .section {
   display: grid;
-  gap: 21px;
+  gap: 20px;
 }
 
 .section__title {
@@ -182,6 +186,10 @@
 }
 
 .link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
   line-height: .5;
   padding-block-end: 3px;
   outline: 1px solid var(--main-text-color);
@@ -207,6 +215,8 @@
 
 .cards-section__image {
   inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .sunset {
@@ -267,6 +277,10 @@
 
 @media (width > 600px) {
 
+  .header {
+    min-block-size: 1024px;
+  }
+
   .header__title {
     position: relative;
     inset-inline-start: calc(0px - var(--padding));
@@ -305,6 +319,10 @@
 }
 
 @media (width > 768px) {
+
+  .header {
+    min-block-size: 768px;
+  }
 
   .header__theme-menu {
     justify-self: center;
