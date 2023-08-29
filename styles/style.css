@@ -190,7 +190,7 @@
 
 .link:focus-visible {
   display: inline-block; /* добавлен для включения свойств для отображения высоты обводки по макету */
-  line-height: .5;
+  line-height: 0.5;
   padding-block-end: 3px;
   outline: 1px solid var(--main-text-color);
   outline-offset: 1px;

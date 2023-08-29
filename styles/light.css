@@ -14,7 +14,7 @@
   --text-shadow: #ff8dcb;
   --bg-color: #fff1f7;
   --subtitle-text-color: #353430;
-  --hover: rgba(50, 49, 45, 0.40);
+  --hover: rgb(50 49 45 / 0.4);
   --main-text-color: #353430;
   --accent-text-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
@@ -28,7 +28,7 @@
     --text-shadow: #ff8dcb;
     --bg-color: #fff1f7;
     --subtitle-text-color: #353430;
-    --hover: rgba(50, 49, 45, 0.40);
+    --hover: rgb(50 49 45 / 0.4);
     --main-text-color: #353430;
     --accent-text-color: #353430;
     --bg-image: url(../images/cover-image-light.png);
