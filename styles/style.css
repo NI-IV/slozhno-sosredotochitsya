@@ -176,7 +176,6 @@
 }
 
 .link {
-  display: inline-block;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--text-shadow);
 }
@@ -190,6 +189,7 @@
 }
 
 .link:focus-visible {
+  display: inline-block; /* добавлен для включения свойств для отображения высоты обводки по макету */
   line-height: .5;
   padding-block-end: 3px;
   outline: 1px solid var(--main-text-color);
@@ -313,9 +313,7 @@
   }
 
   .cards-section__image {
-    inline-size: 100%;
     block-size: 100%;
-    object-fit: cover;
   }
 
   .footer {
